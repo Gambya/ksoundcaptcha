@@ -65,6 +65,7 @@ Versão Anterior
 Versão Antiga
 ![alt text][postman3]
 
+
 ### Objeto de retorno
 ```
 { 'solucao' : '<resolução_captcha>', 'status' : 'SUCESSO' }

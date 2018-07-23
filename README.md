@@ -63,12 +63,15 @@ response.json()
 [postman3]: https://i.stack.imgur.com/LiTtB.jpg "Versão Antiga"
 
 Nova Versão
+
 ![alt text][postman1]
 
 Versão Anterior
+
 ![alt text][postman2]
 
 Versão Antiga
+
 ![alt text][postman3]
 
 

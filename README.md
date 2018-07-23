@@ -24,9 +24,15 @@ Api restful que soluciona captchas de audio.
 * wrapt==1.10.11
 
 ## Instalar Api Web
+Clonar projeto:
 ``` 
 # git clone https://github.com/Gambya/ksoundcaptcha.git
 ```
+Instalar dependencias:
+```
+# pip install -r requirements.txt
+```
+
 ## Rodar servidor web
 Não recomendado para rodar em produção na forma a seguir.
 Para produção verificar na documentação do flask.

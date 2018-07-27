@@ -1,4 +1,4 @@
-from os import path
+from os import path, remove
 import speech_recognition as sr
 
 
@@ -8,6 +8,8 @@ class LeitorService():
             rec = sr.Recognizer()
 
             with sr.AudioFile(path_arq) as source:
-                audio = rec.record(source)
-        return rec.recognize_google(audio, language="pt")
+                audio = rec.record(source
+            solucao = rec.recognize_google(audio, language="pt")
+            os.remove(path_arq)
+        return solucao
         

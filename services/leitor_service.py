@@ -11,4 +11,4 @@ class LeitorService():
                 audio = rec.record(source)
             solucao = rec.recognize_google(audio, language="pt")
             remove(path_arq)
-        return solucao
+        return solucao.strip()

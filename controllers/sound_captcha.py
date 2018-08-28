@@ -19,11 +19,15 @@ class SoundCaptcha(Resource):
         if not path.isdir(target):
             mkdir(target)
         try:
-            for file in request.files.getlist('audio'):
+            audio = request.files.getlist('audio')
+            if len(audio) <= 0:
+                return jsonify({'error' : 'lista de audio vazia.', 'solucao' : '', 'status' : 'ERROR' })
+                
+            for file in audio:
                 filename = file.filename
                 destino = path.join(target, filename)
                 file.save(destino)
             solucao = self.leitor_service.ler_audio(destino)
-        except expression as error:
-            return jsonify({ 'error' : error, 'solucao': '', 'status': 'ERROR' })
+        except Exception as error:
+            return jsonify({ 'error' : str(error), 'solucao': '', 'status': 'ERROR' })
         return jsonify({ 'solucao': solucao, 'status': 'SUCESSO' })

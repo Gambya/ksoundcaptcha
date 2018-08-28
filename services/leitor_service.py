@@ -10,6 +10,5 @@ class LeitorService():
             with sr.AudioFile(path_arq) as source:
                 audio = rec.record(source)
             solucao = rec.recognize_google(audio, language="pt")
-            os.remove(path_arq)
+            remove(path_arq)
         return solucao
-        

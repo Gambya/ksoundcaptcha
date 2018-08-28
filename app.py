@@ -11,4 +11,4 @@ api = Api(app)
 api.add_resource(SoundCaptcha, '/resolvercaptcha')
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()

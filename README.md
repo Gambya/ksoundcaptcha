@@ -22,6 +22,7 @@ Api restful que soluciona captchas de audio.
 * typed-ast==1.1.0
 * Werkzeug==0.14.1
 * wrapt==1.10.11
+* gunicorn==19.9.0
 
 ## Instalar Api Web
 Clonar projeto:

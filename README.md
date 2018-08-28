@@ -48,6 +48,12 @@ or
 # python app.py
 ```
 
+Em produção:
+```
+# cd ksoundcaptcha
+# gunicorn app:app -b localhost:8000
+```
+
 ## Exemplos de Requisição
 ### Python (módulo requests)
 ``` python

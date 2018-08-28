@@ -85,4 +85,5 @@ Versão Antiga
 ### Objeto de retorno
 ```
 { 'solucao' : '<resolução_captcha>', 'status' : 'SUCESSO' }
+{'error' : '<msg de erro>', 'solucao' : '', 'status' : 'ERROR' }
 ```

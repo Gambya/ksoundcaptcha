@@ -28,9 +28,10 @@ class SoundCaptcha(Resource):
                 filename = file.filename
                 destino = path.join(target, filename)
                 file.save(destino)
-            if language:
+            
+            if not language is None:
                 solucao = self.leitor_service.ler_audio(destino, language=language)
-            else
+            else:
                 solucao = self.leitor_service.ler_audio(destino)
         except Exception as error:
             return jsonify({ 'error' : str(error), 'solucao': '', 'status': 'ERROR' })

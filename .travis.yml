@@ -3,9 +3,9 @@ language: python
 python:
   - "3.6"
 
-sudo:
-  - apt-get install portaudio19-dev
-  - apt-get install python-pyaudio
+before_install:
+  - sudo apt-get install portaudio19-dev
+  - sudo apt-get install python-pyaudio
 
 install:
   - pip install -r requirements.txt

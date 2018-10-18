@@ -13,6 +13,6 @@ install:
 script:
   - export FLASK_APP=app.py
   - export FLASK_ENV=development
-  - flask run
-  - sleep 10
+  - flask run &
+  - sleep 2
   - python setup.py test

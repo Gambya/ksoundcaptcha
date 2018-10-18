@@ -1,0 +1,11 @@
+language: python
+
+python:
+  - "3"
+
+sudo: required
+
+script:
+  - flask run
+  - sleep 10
+  - python setup.py test

@@ -1,4 +1,4 @@
-# KSoundCaptcha     [![Build Status](https://travis-ci.org/Gambya/ksoundcaptcha.svg?branch=master)](https://travis-ci.org/Gambya/ksoundcaptcha)
+# KSoundCaptcha     [![Build Status](https://travis-ci.org/Gambya/ksoundcaptcha.svg?branch=master)](https://travis-ci.org/Gambya/ksoundcaptcha)  [![Coverage Status](https://coveralls.io/repos/github/Gambya/ksoundcaptcha/badge.svg?branch=master)](https://coveralls.io/github/Gambya/ksoundcaptcha?branch=master)
 Api restful que soluciona captchas de audio.
 
 ## Pré-requesitos

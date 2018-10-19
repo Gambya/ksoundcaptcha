@@ -2,14 +2,17 @@ from app import myapp
 
 
 import unittest
-from os import getcwd
+from os import getcwd, name
 
 
 class TestSoundCaptcha(unittest.TestCase):
     def setUp(self):
         app = myapp.test_client()
-        
-        data = dict({'audio':(open(fr'{getcwd()}\audio0.wav', 'rb'), r'audio0.wav'), 'language':'pt'})
+        if name == 'nt':
+            bar = '\\'
+        else:
+            bar = '/'
+        data = dict({'audio':(open(fr'{getcwd()}{bar}audio0.wav', 'rb'), r'audio0.wav'), 'language':'pt'})
         self.response = app.post('/resolvercaptcha', data=data, follow_redirects=True, content_type='multipart/form-data')
 
     def test_post(self):

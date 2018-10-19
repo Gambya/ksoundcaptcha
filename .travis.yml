@@ -11,8 +11,5 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - export FLASK_APP=app.py
-  - export FLASK_ENV=development
-  - flask run & 
-  - sleep 2
-  - python setup.py test
+  - cd test
+  - py.test

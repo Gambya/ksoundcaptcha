@@ -9,6 +9,6 @@ myapp = Flask(__name__)
 api = Api(myapp)
 
 api.add_resource(SoundCaptcha, '/resolvercaptcha')
-
+# comentario
 if __name__=='__main__':
     myapp.run()
